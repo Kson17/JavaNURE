@@ -10,6 +10,12 @@ public class Main {
         Rectangle rectangle2 = new Rectangle(120, 190, "rectangle 2");
 
         System.out.println(String.valueOf(rectangle1.perimeter()));
-        Rectangle.compareAreas(rectangle1, rectangle2);
+        Rectangle.compareAreasAndPrint(rectangle1, rectangle2);
+
+        Car car = new Car(5, 120, "Opel", 180, 2000, 4);
+        Truck truck = new Truck(true, 4000, 2.4, "Scania", 140, 3000, 2);
+
+        System.out.println(String.valueOf(car.engine_power));
+        System.out.println(String.valueOf(truck.has_trailer));
     }
 }

@@ -1,15 +1,18 @@
 package com.nure;
 
 // Задание 9 из списка задач к занятию 4
-public class Rectangle {
-    public int height;
-    public int width;
-    public String name;
+// Опишите класс прямоугольников. Задайте функцию, определяющую, площадь какого прямоугольника из двух больше.
+// Задайте функцию вычисления периметра прямоугольника.
 
-    public Rectangle (int h, int w, String n) {
-        height = h;
-        width = w;
-        name = n;
+public class Rectangle {
+    int height;
+    int width;
+    String name;
+
+    public Rectangle (int height, int width, String name) {
+        this.height = height;
+        this.width = width;
+        this.name = name;
     }
 
     public int perimeter() {
@@ -20,7 +23,7 @@ public class Rectangle {
         return height * width;
     }
 
-    public static void compareAreas(Rectangle rect1, Rectangle rect2) {
+    public static void compareAreasAndPrint(Rectangle rect1, Rectangle rect2) {
       if (rect1.area() > rect2.area()) {
           System.out.println("Площадь " + rect1.name + " больше чем площадь " + rect2.name);
       } else if (rect2.area() > rect1.area()) {
