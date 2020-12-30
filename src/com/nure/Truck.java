@@ -1,5 +1,8 @@
 package com.nure;
 
+// Задача 12 из списка задач к занятию 5
+// Опишите базовый класс автомобилей и производные.
+
 public class Truck extends Transport {
     boolean has_trailer;
     int trailer_capacity;
